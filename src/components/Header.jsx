@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const header = () => {
   return (
@@ -7,11 +7,22 @@ const header = () => {
       <div className="conatiner">
         <col className="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12" />
 
-        <nav className="navbar navbar-expand-lg" style={{backgroundColor:"#E3CCAE"}}>
+        <nav
+          className="navbar navbar-expand-lg"
+          style={{ backgroundColor: "#E3CCAE" }}
+        >
           <div className="container-fluid">
-            <a className="navbar-brand" href="/">
+            <Link
+              to="/"
+              style={{
+                marginRight: "15px",
+                textDecoration: "none",
+                color: "black",
+              }}
+            >
               Employee-App
-            </a>
+            </Link>
+
             <button
               className="navbar-toggler"
               type="button"
@@ -26,13 +37,26 @@ const header = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                 <Link to = "/" style={{marginRight:"15px",textDecoration:"none",color:"black"}}>Home</Link>
+                  <Link
+                    to="/"
+                    style={{
+                      marginRight: "15px",
+                      textDecoration: "none",
+                      color: "black",
+                    }}
+                  >
+                    Home
+                  </Link>
                 </li>
-                
+
                 <li className="nav-item">
-<Link to ="/employeeform" style={{textDecoration:"none",color:"black"}}> Employee-Form</Link>
-                   
-                  
+                  <Link
+                    to="/employeeform"
+                    style={{ textDecoration: "none", color: "black" }}
+                  >
+                    {" "}
+                    Employee-Form
+                  </Link>
                 </li>
               </ul>
             </div>
