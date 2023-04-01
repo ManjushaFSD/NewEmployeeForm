@@ -26,11 +26,11 @@ const header = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                 <Link to = "/" style={{marginRight:"15px"}}>Home</Link>
+                 <Link to = "/" style={{marginRight:"15px",textDecoration:"none",color:"black"}}>Home</Link>
                 </li>
                 
                 <li className="nav-item">
-<Link to ="/employeeform"> Employee-Form</Link>
+<Link to ="/employeeform" style={{textDecoration:"none",color:"black"}}> Employee-Form</Link>
                    
                   
                 </li>
