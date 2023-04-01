@@ -12,7 +12,7 @@ function App() {
 
    
    <Route exact path="/" element = {< Home />}/>
-   <Route  path="/employeeform" element = {< EmployeeEntry />}/>
+   <Route exact path="/employeeform" element = {< EmployeeEntry />}/>
 
 
 
