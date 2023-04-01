@@ -6,13 +6,13 @@ import EmployeeEntry from './components/EmployeeEntry.jsx'
 function App() {
   return (
     <div >
-  <BrowserRouter  >
+  <BrowserRouter basename = "NewEmployeeForm" >
  
 <Routes>
 
 
    <Route exact path="/" element = {< Home />}/>
-   <Route exact path="employeeform" element = {< EmployeeEntry />}/>
+   <Route exact path="/employeeform" element = {< EmployeeEntry />}/>
 
 
 
